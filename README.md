@@ -1,7 +1,7 @@
 sublime-text-fex
 ================
 
-Sublime Text Plugin for [Fex](https://github.com/hwangzhiming/fex)
+[Fex](https://github.com/hwangzhiming/fex) plugin for Sublime Text .
 
 ![](https://68vvaa.bn1301.livefilestore.com/y2pTM4wDyIq-3Lr018xErzCl5vJxjxjCyeMtdWyjBxVzksCMq8bu2kqj3D5rkJWPT6qnQn8YKJ2JSNZDKSGAhvWaKgHsuKNUR5ye2bK1XIhxsA/Screenshots.png?psid=1)
 
