@@ -3,7 +3,7 @@ sublime-text-fex
 
 Sublime Text Plugin for [Fex](https://github.com/hwangzhiming/fex)
 
-![](https://bzt8lq.bn1301.livefilestore.com/y2p7QzkcEu7l1mrNMSsc-671zhOTi4muiglVCGllPumfOG6_gw71XXqCvlncOcyYBHJUs30RVr8WwBU5h96Qxg0IZfKFijB9bZEDtVl4BqEmfw/Screenshots.png?psid=1)
+![](https://68vvaa.bn1301.livefilestore.com/y2pTM4wDyIq-3Lr018xErzCl5vJxjxjCyeMtdWyjBxVzksCMq8bu2kqj3D5rkJWPT6qnQn8YKJ2JSNZDKSGAhvWaKgHsuKNUR5ye2bK1XIhxsA/Screenshots.png?psid=1)
 
 Installation
 ============
