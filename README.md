@@ -21,7 +21,7 @@ C:\Users\{UserName}\AppData\Roaming\Sublime Text 2\Packages
 
 Notes
 =============
-1. Open only **one** Fex project at a time
+1. Open only **one** Fex project at a time.
 2. Currently, you need to start the fex http server by yourself:
 ```
 cd fex-project-folder
