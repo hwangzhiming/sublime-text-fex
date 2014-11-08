@@ -1,0 +1,59 @@
+[
+    {
+        "id": "fex",
+        "caption": "Fex",
+        "children":
+        [   
+            {
+                "id": "fex_add_controller",
+                "caption": "New Controller",
+                "command": "add_fex_controller"
+            },
+            {
+                "id": "fex_add_service",
+                "caption": "New Service",
+                "command": "add_fex_service"
+            },
+            {
+                "id": "fex_add_provider",
+                "caption": "New Provider",
+                "command": "add_fex_provider"
+            },
+            {
+                "id": "fex_add_directive",
+                "caption": "New Directive",
+                "command": "add_fex_directive"
+            },
+            {
+                "id": "fex_add_factory",
+                "caption": "New Factory",
+                "command": "add_fex_factory"
+            },
+            {
+                "caption": "-"
+            },
+            
+            {
+                "id": "fex_project_build",
+                "caption": "Build Project",
+                "command": "build_fex_project"
+            },
+            {
+                "id": "fex_project_test",
+                "caption": "Run All Tests",
+                "command": "run_all_fex_project_tests"
+            },
+            {
+                "caption": "-"
+            },
+            {
+                "caption": "Help",
+                "command": "fex_wiki"
+            },
+            {
+                "caption": "About Plugin",
+                "command": "fex_about_plugin"
+            }
+        ]
+    }
+]
