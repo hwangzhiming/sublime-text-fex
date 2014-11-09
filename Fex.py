@@ -1,8 +1,8 @@
 import sublime, sublime_plugin
 import webbrowser
-import os, shutil
+import os, shutil,subprocess
 import functools
-from FexCommand import FexTextCommand, FexWindowCommand
+from FexCommand import FexTextCommand, FexWindowCommand,FexCustomCommand
 
 def Window():
 	return sublime.active_window()
@@ -76,3 +76,33 @@ class FexWikiCommand(sublime_plugin.WindowCommand):
 class FexAboutPluginCommand(sublime_plugin.WindowCommand):
 	def run(self):
 		webbrowser.open_new('https://github.com/hwangzhiming/sublime-text-fex')
+
+
+class FexBowerInstallCommand(FexWindowCommand):
+	def run(self):
+		Window().run_command('hide_panel');
+		command = ["bower", "install"]
+		self.run_command(command)
+
+
+class BowerInstallNewPackageCommand(FexWindowCommand):
+	def run(self,paths=[],name=""):
+		Window().run_command('hide_panel');
+		Window().show_input_panel("Bower Package:", name, functools.partial(self.on_done, paths, False), None, None)
+	def on_done(self, paths, relative_to_project, name):
+		if(name):
+			command = ['bower','install',name,'--save']
+			self.run_command(command)
+
+
+class FexTerminalCommand(FexWindowCommand):
+	def run(self):
+		fex_root=self.get_fex_root()
+		app='x-terminal-emulator'
+		if os.name=='nt':
+			app='cmd'
+		subprocess.Popen(app,cwd=fex_root)
+		
+	def is_enabled(self):
+		if self._active_file_name() or len(self.window.folders()) == 1:
+			return self.get_fex_root() and os.name=='nt'

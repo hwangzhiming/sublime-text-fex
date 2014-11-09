@@ -47,6 +47,29 @@
                 "caption": "-"
             },
             {
+                "id": "fex_install_bower_package",
+                "caption": "Install Bower Package",
+                "command": "bower_install_new_package"
+            },
+            {
+                "id": "fex_bower_install",
+                "caption": "Fetch Bower Package",
+                "command": "fex_bower_install"
+            },
+            {
+                "caption": "-"
+            },
+            {
+                "id": "fex_custom_command",
+                "caption": "Custom Command",
+                "command": "fex_custom"
+            },
+            {
+                "id": "fex_terminal",
+                "caption": "Terminal",
+                "command": "fex_terminal"
+            },
+            {
                 "caption": "Help",
                 "command": "fex_wiki"
             },

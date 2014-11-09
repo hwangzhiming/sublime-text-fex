@@ -322,17 +322,17 @@ class FexCustomCommand(FexWindowCommand):
     def on_input(self, command):
         command = str(command)  # avoiding unicode
         if command.strip() == "":
-            self.panel("No fex command provided")
+            self.panel("No custom command provided")
             return
         import shlex
         cmds = [c.strip() for c in command.split(';') if c.strip() != '']
         for cmd in cmds:
-            command_splitted = ['fex'] + shlex.split(cmd)
+            command_splitted = shlex.split(cmd)
             print command_splitted
             self.run_command(command_splitted)
 
 
 class DemoServer(FexTextCommand):
     def run(self, edit):
-        command = ['fex', 'gui']
+        command = ['fex', '-V']
         self.run_command(command)
