@@ -2,7 +2,7 @@ import sublime, sublime_plugin
 import webbrowser
 import os, shutil,subprocess
 import functools
-from FexCommand import FexTextCommand, FexWindowCommand,FexCustomCommand
+from flib.FexCmd import FexTextCommand, FexWindowCommand,FexCustomCommand
 
 def Window():
 	return sublime.active_window()

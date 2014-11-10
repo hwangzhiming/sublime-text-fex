@@ -137,7 +137,7 @@ class CommandThread(threading.Thread):
 
 
 # A base for all commands
-class FexCommand(object):
+class FexCmd(object):
     may_change_files = False
 
     def run_command(self, command, callback=None, show_status=True,
@@ -220,7 +220,7 @@ class FexCommand(object):
 
 
 # A base for all fex commands that work with the entire repository
-class FexWindowCommand(FexCommand, sublime_plugin.WindowCommand):
+class FexWindowCommand(FexCmd, sublime_plugin.WindowCommand):
     def active_view(self):
         return self.window.active_view()
 
@@ -268,7 +268,7 @@ class FexWindowCommand(FexCommand, sublime_plugin.WindowCommand):
 
 
 # A base for all fex commands that work with the file in the active view
-class FexTextCommand(FexCommand, sublime_plugin.TextCommand):
+class FexTextCommand(FexCmd, sublime_plugin.TextCommand):
     def active_view(self):
         return self.view
 
